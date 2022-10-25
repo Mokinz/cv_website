@@ -1,0 +1,64 @@
+.parent {
+  background-color: hsl(200deg, 100%, 20%);
+  height: 400px;
+  width: 400px;
+}
+
+.child {
+  background-color: red;
+  height: 50%;
+  width: 50%;
+  -webkit-animation: go-circle 1.5s ease-in infinite;
+          animation: go-circle 1.5s ease-in infinite;
+}
+
+.parent:hover .child {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes go-circle {
+  0% {
+    background-color: red;
+    transform: translateX(0%);
+  }
+  25% {
+    background-color: purple;
+    transform: translateY(100%);
+  }
+  50% {
+    background-color: green;
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    background-color: orange;
+    transform: translateX(100%);
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0%) translateY(0%);
+  }
+}
+
+@keyframes go-circle {
+  0% {
+    background-color: red;
+    transform: translateX(0%);
+  }
+  25% {
+    background-color: purple;
+    transform: translateY(100%);
+  }
+  50% {
+    background-color: green;
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    background-color: orange;
+    transform: translateX(100%);
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0%) translateY(0%);
+  }
+}/*# sourceMappingURL=styles2.css.map */

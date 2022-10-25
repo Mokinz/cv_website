@@ -1,0 +1,9 @@
+@import "./custom";
+
+header{
+    @include flexCenter;
+    margin-top: 0.5vh;
+    span{
+        text-decoration: underline;
+    }
+}

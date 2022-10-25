@@ -1,0 +1,57 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.5vh;
+}
+header span {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #94DAFF;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.profilepicture {
+  width: 25vh;
+  border-radius: 50%;
+  margin: 15% 0;
+}
+
+hr {
+  margin: 1% 40% 0 40%;
+  border: none;
+  height: 5px;
+  opacity: 75;
+  color: #B983FF;
+  background-color: #B983FF;
+}
+
+.animate {
+  -webkit-animation: spin 0.5s linear;
+  animation: spin 0.5s linear;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .list-group {
+  margin: 10%;
+}
+
+body nav a {
+  margin: 1% 1%;
+}
+
+.nav-pills > li.active > a {
+  color: red;
+}/*# sourceMappingURL=styles.css.map */
